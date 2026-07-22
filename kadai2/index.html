@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>じゃんけんクエスト</title>
+    <link rel="stylesheet" href="js/main.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>⚔️ じゃんけんクエスト ⚔️</h1>
+
+        <div class="enemy-area">
+            <h2 id="enemy-name">スライム</h2>
+            <p>HP：<span id="enemy-hp">40</span></p>
+            <div id="enemy-image">👾</div>
+        </div>
+
+        <div class="message-area">
+            <p id="message">じゃんけんで敵を倒そう！</p>
+        </div>
+
+        <div class="player-area">
+            <h2>🧑‍勇者</h2>
+            <p>HP：<span id="player-hp">200</span></p>
+        </div>
+
+        <div class="hand-area">
+            <h2>どの手を出す？</h2>
+
+            <button onclick="playGame('グー')">✊ グー</button>
+            <button onclick="playGame('チョキ')">✌️ チョキ</button>
+            <button onclick="playGame('パー')">✋ パー</button>
+        </div>
+
+        <div class="result-area">
+            <p>あなた：<span id="player-hand">---</span></p>
+            <p>敵：<span id="enemy-hand">---</span></p>
+        </div>
+
+        <button id="restart-button" onclick="restartGame()" style="display:none;">
+            もう一度遊ぶ
+        </button>
+
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
